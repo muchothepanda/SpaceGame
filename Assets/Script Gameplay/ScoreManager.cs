@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    [SerializeField] private int TotalScore;
+    [SerializeField] public static int TotalScore;
     [SerializeField] private int HighScore;
     public static ScoreManager singleton;
     public UnityEvent<int> OnTotalScoreChanged = new UnityEvent<int>();
@@ -33,8 +35,10 @@ public class ScoreManager : MonoBehaviour
             HighScore = TotalScore;
             OnHighestScoreChangted.Invoke(HighScore);
         }
-        
     }
-    
 
+    public void NewGame()
+    {
+        TotalScore = 0;
+    }
 }

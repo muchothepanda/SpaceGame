@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UiGameplay : MonoBehaviour
+public class UiManager : MonoBehaviour
 {
-    //reference to score
-    //reference to highscore
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +15,4 @@ public class UiGameplay : MonoBehaviour
     {
         
     }
-    //MEATHODS
-
-    //update score
-    //update highscore
-   
 }

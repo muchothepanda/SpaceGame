@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 
 public abstract class MainCharacter : MonoBehaviour, IDamageable
 {
-    protected Health healthpoints;
-    [SerializeField] private float speed;
+    public Health healthpoints;
+    [SerializeField] protected private float speed;
     public Weapon weapon;
 
     [SerializeField] protected Rigidbody2D RigidBody;
@@ -32,6 +32,7 @@ public abstract class MainCharacter : MonoBehaviour, IDamageable
        
         healthpoints.TakeDamage(damage);
     }
+  
 
 
     public virtual void Move(Vector2 direction, float angle)
@@ -39,8 +40,11 @@ public abstract class MainCharacter : MonoBehaviour, IDamageable
 
         RigidBody.AddForce(direction * speed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(0,0,angle-90);
-
+        
     }
 
-   
+    public void Heal()
+    {
+          healthpoints.heal();
+    }
 }

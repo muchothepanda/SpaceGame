@@ -11,7 +11,6 @@ public class Bullet: MonoBehaviour
     {
         Destroy(gameObject, 3f);
     }
-
     public void SetUpBullet(string tag,int damageParam)
     {
         targetTag = tag;
@@ -21,13 +20,10 @@ public class Bullet: MonoBehaviour
     {
         transform.Translate(Vector2.up* bulletspeed*Time.deltaTime);
     }
-
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag(targetTag))
-        {
-            
+        { 
             collision.GetComponent<IDamageable>().ReceiveDamage(damage);
             Destroy(gameObject);
         }
