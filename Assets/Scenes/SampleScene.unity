@@ -176,7 +176,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 900}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -353,10 +353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c779fc5f0a373342974659b35397a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5908380631593732871, guid: bc4fc99888b71754b996e8acc7c43ccf, type: 3}
-  enemy: {fileID: 0}
-  weapon: {fileID: 0}
-  explodingEnemy: {fileID: 0}
 --- !u!114 &1156420548 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5908380631593732871, guid: bc4fc99888b71754b996e8acc7c43ccf, type: 3}
@@ -454,7 +450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.4, y: 0.6}
+  m_AnchoredPosition: {x: -0.000046551, y: -0.000016868}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1312174522
@@ -591,7 +587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 269}
+  m_AnchoredPosition: {x: -0.00000047684, y: 429}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448790309
@@ -927,7 +923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 429, y: 269}
+  m_AnchoredPosition: {x: 790, y: 429}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1817093282
@@ -1062,7 +1058,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -417, y: 269}
+  m_AnchoredPosition: {x: -778, y: 429}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &6799168765614876042
